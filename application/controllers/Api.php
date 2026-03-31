@@ -1025,22 +1025,4 @@ class Api extends RestController
     ];
     $isUpdated = $this->Root_model->update($updateConditions, 'companies_work_location', $updateData);
   }
-  public function updateCompanyLat3_post()
-  {
-
-    $json_data = $this->input->raw_input_stream;
-    $data = json_decode($json_data, TRUE);
-    if (empty($data)) {
-      $this->response(['status' => FALSE, 'message' => 'Invalid Request Data'], 400);
-      return;
-    }
-
-    $id = $data['id'];
-    $allowed_radius = $data['allowed_radius'];
-    $updateConditions = ['id' => $id];
-    $updateData = [
-      'allowed_radius'  => $allowed_radius
-    ];
-    $isUpdated = $this->Root_model->update($updateConditions, 'companies_work_location', $updateData);
-  }
 }
