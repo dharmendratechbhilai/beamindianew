@@ -1,0 +1,24 @@
+{
+  "name": "codeigniter/framework-boilerplate",
+  "description": "The CodeIgniter framework",
+  "license": "MIT",
+  "require": {
+    "php": ">=7.2",
+    "chriskacerguis/codeigniter-restserver": "dev-main",
+    "firebase/php-jwt": "^6.10",
+    "phpoffice/phpspreadsheet": "^1.30",
+    "mjaschen/phpgeo": "^4.0"
+  },
+  "config": {
+    "allow-plugins": {
+      "kylekatarnls/update-helper": true
+    },
+    "audit": {
+      "ignore": [
+        "PKSA-y2cr-5h3j-g3ys"
+      ]
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
